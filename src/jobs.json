@@ -97,6 +97,20 @@
         "contactPhone": "5135151351"
       },
       "id": "0knhDpj"
+    },
+    {
+      "title": "Test 2",
+      "type": "Internship",
+      "location": "Belgrade",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966,",
+      "salary": "Under $50K",
+      "company": {
+        "name": "Test Company Name 2",
+        "description": "Test Company Desciption 2",
+        "contactEmail": "test@test.com",
+        "contactPhone": "181818348343"
+      },
+      "id": "uKMUJtc"
     }
   ]
 }

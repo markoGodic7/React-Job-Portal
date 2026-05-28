@@ -20,14 +20,26 @@ import AddJobPage from "./pages/AddJobPage.jsx";
 const App = () => {
 
     const addJob = async (newJob) => {
-        const res = await fetch("/api/jobs",{
-            method: "POST",
-            headers: {
+
+        try {
+            const res = await fetch("/api/jobs", {
+                method: "POST",
+                headers: {
                 'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(newJob),
-        });
-        return;
+                    },
+                body: JSON.stringify(newJob),
+                });
+
+            if (!res.ok) {
+                throw new Error(`Failed to add job: ${res.status} ${res.statusText}`);
+            }
+
+            return await res.json();
+        } catch (error) {
+            console.error('Error adding job:', error);
+            throw error; // Re-throw so AddJobPage can handle it
+        }
+
     };
 
     const router = createBrowserRouter(
