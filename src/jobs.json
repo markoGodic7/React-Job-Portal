@@ -15,20 +15,6 @@
       }
     },
     {
-      "id": "2",
-      "title": "Front-End Engineer (React & Redux)",
-      "type": "Full-Time",
-      "location": "Miami, FL",
-      "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
-      "salary": "$70K - $80K",
-      "company": {
-        "name": "Veneer Solutions",
-        "description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
-        "contactEmail": "contact@loremipsum.com",
-        "contactPhone": "555-555-5555"
-      }
-    },
-    {
       "id": "3",
       "title": "React.js Dev",
       "type": "Full-Time",
@@ -85,6 +71,7 @@
       }
     },
     {
+      "id": "0knhDpj",
       "title": "Test Job 1",
       "type": "Full-Time",
       "location": "Serbia",
@@ -94,23 +81,8 @@
         "name": "Test Company Name",
         "description": "Test Company Description",
         "contactEmail": "test@test.com",
-        "contactPhone": "5135151351"
-      },
-      "id": "0knhDpj"
-    },
-    {
-      "title": "Test 2",
-      "type": "Internship",
-      "location": "Belgrade",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966,",
-      "salary": "Under $50K",
-      "company": {
-        "name": "Test Company Name 2",
-        "description": "Test Company Desciption 2",
-        "contactEmail": "test@test.com",
-        "contactPhone": "181818348343"
-      },
-      "id": "uKMUJtc"
+        "contactPhone": "5135151351575755757757575"
+      }
     }
   ]
 }
