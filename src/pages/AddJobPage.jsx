@@ -37,7 +37,7 @@ const AddJobPage = ({ addJobSubmit }) => {
             await addJobSubmit(newJob);
             toast.success("Job added successfully!");
             navigate('/jobs');
-        } catch (error) {
+        } catch {
             toast.error("Failed to add job.");
         }
     }
