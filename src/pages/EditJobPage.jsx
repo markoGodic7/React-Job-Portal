@@ -20,7 +20,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
 
     const { id } = useParams();
 
-    const submitForm = (e) => {
+    const submitForm = async (e) => {
         e.preventDefault();
 
         const updatedJob = {
@@ -37,11 +37,13 @@ const EditJobPage = ({ updateJobSubmit }) => {
                 contactPhone,
             }
         }
-        updateJobSubmit(updatedJob);
-
-        toast.success("Job updated successfully!");
-
-        return navigate(`/jobs/${id}`);
+        try {
+            await updateJobSubmit(updatedJob);
+            toast.success("Job updated successfully!");
+            navigate(`/jobs/${id}`);
+        } catch (error) {
+            toast.error("Failed to update job.");
+        }
     }
     
 

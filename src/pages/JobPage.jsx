@@ -11,15 +11,16 @@ const JobPage = ({ deleteJob }) => {
     const job = useLoaderData();
 
     const onDeleteClick = async (jobId) => {
-        const confrirm = window.confirm("Are you sure you want to delete this job?");
+        const confirmed = window.confirm("Are you sure you want to delete this job?");
+        if (!confirmed) return;
 
-        if(!confirm) return;
-
-        deleteJob(jobId);
-
-        toast.success("Job deleted successfully!");
-
-        navigate('/jobs');
+        try {
+            await deleteJob(jobId);
+            toast.success("Job deleted successfully!");
+            navigate('/jobs');
+        } catch (error) {
+            toast.error("Failed to delete job.");
+        }
     }
 
     return (
